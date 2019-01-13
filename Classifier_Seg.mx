@@ -1,0 +1,820 @@
+cSeg = ClassifierFunction[<|"ExampleNumber" -> 195, "ClassNumber" -> 6, 
+      "Input" -> <|"Preprocessor" -> MachineLearning`MLProcessor[
+          "ToMLDataset", <|"Input" -> <|"f1" -> <|"Type" -> "Numerical"|>, 
+             "f2" -> <|"Type" -> "Numerical"|>, "f3" -> <|"Type" -> 
+                "Numerical"|>, "f4" -> <|"Type" -> "Numerical"|>, 
+             "f5" -> <|"Type" -> "Numerical"|>, "f6" -> <|"Type" -> 
+                "Numerical"|>, "f7" -> <|"Type" -> "Numerical"|>, 
+             "f8" -> <|"Type" -> "Numerical"|>, "f9" -> <|"Type" -> 
+                "Numerical"|>, "f10" -> <|"Type" -> "Numerical"|>, 
+             "f11" -> <|"Type" -> "Numerical"|>, "f12" -> <|"Type" -> 
+                "Numerical"|>, "f13" -> <|"Type" -> "Numerical"|>, 
+             "f14" -> <|"Type" -> "Numerical"|>, "f15" -> <|"Type" -> 
+                "Numerical"|>, "f16" -> <|"Type" -> "Numerical"|>, 
+             "f17" -> <|"Type" -> "Numerical"|>, "f18" -> <|"Type" -> 
+                "Numerical"|>, "f19" -> <|"Type" -> "Numerical"|>, 
+             "f20" -> <|"Type" -> "Numerical"|>, "f21" -> <|"Type" -> 
+                "Numerical"|>, "f22" -> <|"Type" -> "Numerical"|>, 
+             "f23" -> <|"Type" -> "Numerical"|>, "f24" -> <|"Type" -> 
+                "Numerical"|>|>, "Output" -> <|"f1" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f2" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f3" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f4" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f5" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f6" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f7" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f8" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f9" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f10" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f11" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f12" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f13" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f14" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f15" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f16" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f17" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f18" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f19" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f20" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f21" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f22" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f23" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>, "f24" -> <|"Type" -> 
+                "Numerical", "Weight" -> 1|>|>, "Preprocessor" -> 
+            MachineLearning`MLProcessor["Sequence", <|"Processors" -> {
+                MachineLearning`MLProcessor["Transpose", <|"FeatureNumber" -> 
+                   24|>], MachineLearning`MLProcessor["WrapMLDataset", 
+                 <|"FeatureTypes" -> {"Numerical", "Numerical", "Numerical", 
+                    "Numerical", "Numerical", "Numerical", "Numerical", 
+                    "Numerical", "Numerical", "Numerical", "Numerical", 
+                    "Numerical", "Numerical", "Numerical", "Numerical", 
+                    "Numerical", "Numerical", "Numerical", "Numerical", 
+                    "Numerical", "Numerical", "Numerical", "Numerical", 
+                    "Numerical"}, "FeatureKeys" -> {"f1", "f2", "f3", "f4", 
+                    "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", 
+                    "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", 
+                    "f22", "f23", "f24"}, "FeatureWeights" -> Automatic, 
+                  "ExampleWeights" -> Automatic, "RawExample" -> Missing[
+                    "KeyAbsent", "RawExample"]|>]}|>], "ScalarFeature" -> 
+            False, "Invertibility" -> "Perfect", "Missing" -> "Allowed"|>], 
+        "Processor" -> MachineLearning`MLProcessor["Sequence", 
+          <|"Input" -> <|"f1" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f2" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f3" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f4" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f5" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f6" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f7" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f8" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f9" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f10" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f11" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f12" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f13" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f14" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f15" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f16" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f17" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f18" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f19" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f20" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f21" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f22" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f23" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+             "f24" -> <|"Type" -> "Numerical", "Weight" -> 1|>|>, 
+           "Output" -> <|"(f1f2f3f4f5f6f7f8f9f10f11f12f13f14f15f16f17f18f19f2\
+0f21f22f23f24)" -> <|"Type" -> "NumericalVector", "Weight" -> 24|>|>, 
+           "Processors" -> {MachineLearning`MLProcessor["ToVector", 
+              <|"Invertibility" -> "Perfect", "Missing" -> "Allowed", 
+               "Input" -> <|"f1" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f2" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f3" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f4" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f5" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f6" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f7" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f8" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f9" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f10" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f11" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f12" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f13" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f14" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f15" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f16" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f17" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f18" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f19" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f20" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f21" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f22" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f23" -> <|"Type" -> "Numerical", "Weight" -> 1|>, 
+                 "f24" -> <|"Type" -> "Numerical", "Weight" -> 1|>|>, 
+               "Output" -> <|"(f1f2f3f4f5f6f7f8f9f10f11f12f13f14f15f16f17f18f\
+19f20f21f22f23f24)" -> <|"Type" -> "NumericalVector", "Weight" -> 24|>|>, 
+               "Version" -> {11.2, 0}, "ID" -> 2484951432533127702|>], 
+             MachineLearning`MLProcessor["ImputeMissing", 
+              <|"Invertibility" -> "Perfect", "Missing" -> "Imputed", 
+               "Input" -> <|"(f1f2f3f4f5f6f7f8f9f10f11f12f13f14f15f16f17f18f1\
+9f20f21f22f23f24)" -> <|"Type" -> "NumericalVector", "Weight" -> 24|>|>, 
+               "VectorLength" -> 24, "Imputer" -> (DimensionReducerFunction[
+                   <|"ExampleNumber" -> 195, "Imputer" -> 
+                     MachineLearning`MLProcessor["ImputeMissing", 
+                      <|"Invertibility" -> "Perfect", "Missing" -> "Imputed", 
+                       "Input" -> <|"f1" -> <|"Type" -> "NumericalVector", 
+                          "Weight" -> 1|>|>, "VectorLength" -> 24, "Naive" -> 
+                        True, "Fill" -> {0.6005034564894642, 
+                        -1.0289952106540994, 553.6328238672897, 
+                        213.91950569982757, 81195.38595816356, 
+                        2203.790905195023, 81661.71872864607, 0., 
+                        0.5083586185290612, 0.6414498322094291, 
+                        276.8164119336449, 106.95975284991378, 
+                        0.1065130063688495, 0.5247830768944663, 
+                        80.31028921307265, 41.38058456178675, 
+                        16411.52217618273, 409.1379652358299, 
+                        16660.566005308712, 0., 0.0786635152383648, 
+                        0.07354687522592859, 40.155144606536325, 
+                        20.690292280893374}, "Output" -> <|"f1" -> 
+                          <|"Type" -> "NumericalVector", "Weight" -> 1|>|>, 
+                       "Type" -> "NumericalVector"|>], "Preprocessor" -> 
+                     MachineLearning`MLProcessor["ToMLDataset", <|"Input" -> 
+                        <|"f1" -> <|"Type" -> "NumericalVector", "Length" -> 
+                          24|>|>, "Output" -> <|"f1" -> <|"Type" -> 
+                          "NumericalVector", "Weight" -> 1|>|>, 
+                       "Preprocessor" -> MachineLearning`MLProcessor[
+                         "Sequence", <|"Processors" -> 
+                          {MachineLearning`MLProcessor["List"], 
+                          MachineLearning`MLProcessor["WrapMLDataset", 
+                          <|"FeatureTypes" -> {"NumericalVector"}, 
+                          "FeatureKeys" -> {"f1"}, "FeatureWeights" -> 
+                          Automatic, "ExampleWeights" -> Automatic, 
+                          "RawExample" -> Missing["KeyAbsent", 
+                          "RawExample"]|>]}|>], "ScalarFeature" -> True, 
+                       "Invertibility" -> "Perfect", "Missing" -> 
+                        "Allowed"|>], "Processor" -> 
+                     MachineLearning`MLProcessor["Identity"], "Padder" -> 
+                     MachineLearning`MLProcessor["Identity"], 
+                    "PostProcessor" -> MachineLearning`MLProcessor[
+                      "FromMLDataset", <|"DatasetFormat" -> Automatic, 
+                       "Input" -> <|"f1" -> <|"Type" -> "NumericalVector", 
+                          "Weight" -> 1|>|>, "Output" -> <|"f1" -> 
+                          <|"Type" -> "NumericalVector", "Length" -> 10|>|>, 
+                       "InversePreprocessor" -> MachineLearning`MLProcessor[
+                         "Sequence", <|"Processors" -> 
+                          {MachineLearning`MLProcessor["List"], 
+                          MachineLearning`MLProcessor["WrapMLDataset", 
+                          <|"FeatureTypes" -> {"NumericalVector"}, 
+                          "FeatureKeys" -> {"f1"}, "FeatureWeights" -> {1}, 
+                          "ExampleWeights" -> 1|>]}|>], "ScalarFeature" -> 
+                        True, "Invertibility" -> "Perfect", "Missing" -> 
+                        "Allowed"|>], "Model" -> <|"Matrix" -> 
+                       {{-0.22045740216078955, 0.22920607058823916, 
+                       0.23361928416282554, 0.33365525264277657, 
+                       0.0009291685100731029, -0.15260511376568933, 
+                       -0.12271450004249815, 0.07135923325943246, 
+                       0.03950308280359427, -0.020251957213767588}, 
+                       {0.03091327641008224, -0.07404787360967321, 
+                       0.2455786615245122, -0.1120720866058747, 
+                       -0.611636932006011, -0.30598852792257064, 
+                       0.021380957058331887, -0.4672041939496389, 
+                       -0.33709000043642384, -0.27887073108952165}, 
+                       {0.18082524442209968, -0.09542870017378366, 
+                       0.47565062325493684, 0.33356107112573463, 
+                       0.0150775234333064, 0.009645729007935477, 
+                       -0.13065656040839707, 0.04165983358248143, 
+                       0.03477808266385127, 0.061709094030407696}, 
+                       {0.293584799779906, -0.22282597805358031, 
+                       -0.05773126041946219, -0.16461833425967354, 
+                       0.023185506069623843, 0.11012224417234734, 
+                       0.07508451600120412, -0.048270007597140493, 
+                       -0.026649204695961284, 0.025631742065528873}, 
+                       {0.3132085468044719, -0.18557980408092964, 
+                       0.039004377164315145, -0.021448815251673387, 
+                       -0.026501890881221978, 0.13768192728828382, 
+                       0.023669021426935763, -0.012087967923956361, 
+                       0.00959639621520611, 0.024757737053552886}, 
+                       {0.20208134567449376, -0.21837191634350145, 
+                       0.291745106313533, -0.27202113641784337, 
+                       0.27292998779674815, -0.12502348253402276, 
+                       0.0864133557461557, -0.05993286763822471, 
+                       -0.027512298226530493, 0.09939664136618688}, 
+                       {0.3129289189976611, -0.1866695419786593, 
+                       0.041348662563604636, -0.022438335354856544, 
+                       -0.023791632973366478, 0.13482006478202616, 
+                       0.026741019032866867, -0.008073349685887445, 
+                       0.014114609578564086, 0.026021418910170013}, {0., 0., 
+                       0., 0., 0., 0., -1.3552527156068805*^-20, 0., 0., 
+                       5.551115123125783*^-17}, {0.12858917267280126, 
+                       -0.038472015724378736, -0.3236514743982955, 
+                       0.3244949347472031, -0.4137993129316072, 
+                       0.36186210141309716, -0.0564324519205721, 
+                       -0.00212259019603161, -0.01473264698051932, 
+                       -0.20866310613512123}, {0.2099967818025361, 
+                       -0.02775820264921975, -0.1332000789012147, 
+                       0.37904948093395885, -0.17279258274293602, 
+                       0.18676452991718667, 0.09648723065784319, 
+                       -0.008675371149230456, 0.23029357908702236, 
+                       0.23042478616456374}, {0.1808252444220997, 
+                       -0.09542870017378376, 0.4756506232549368, 
+                       0.33356107112573463, 0.015077523433306289, 
+                       0.009645729007935644, -0.13065656040839718, 
+                       0.04165983358248143, 0.03477808266385132, 
+                       0.06170909403040775}, {0.29358479977990604, 
+                       -0.22282597805358031, -0.05773126041946219, 
+                       -0.1646183342596735, 0.02318550606962383, 
+                       0.11012224417234706, 0.07508451600120422, 
+                       -0.048270007597140646, -0.026649204695961118, 
+                       0.02563174206552868}, {-0.2298419390526244, 
+                       -0.25641501055257326, -0.05545208755720057, 
+                       -0.11164011442551883, -0.0027722518942007446, 
+                       0.1853044028755682, -0.27149145859900736, 
+                       -0.30767539654014525, 0.20573729269493057, 
+                       0.08592375379337429}, {-0.08012999495402527, 
+                       -0.13149785503344616, 0.04083681258929937, 
+                       -0.2536664805521712, -0.5562010651888906, 
+                       -0.2557603737164442, -0.04192581646356576, 
+                       0.40721317490469644, 0.3001568936116008, 
+                       0.5020739135975077}, {-0.2467344857293446, 
+                       -0.08182684458198389, 0.23410597606828099, 
+                       -0.18569506518019352, -0.07460278649877405, 
+                       0.4492305840518556, -0.20555590191025566, 
+                       0.1218301320247808, -0.08942274098117856, 
+                       -0.06582798401666397}, {-0.1671116271017995, 
+                       -0.3635956586324712, -0.11613777920390227, 
+                       0.13537345733716422, 0.09779876073584493, 
+                       -0.1681021853295654, -0.2184673596277119, 
+                       -0.23913990901089474, 0.2145997404862564, 
+                       -0.0013801422493224247}, {-0.12617729383215712, 
+                       -0.38394130212450406, -0.11179287649795366, 
+                       0.1701281389192908, 0.02833566756512068, 
+                       -0.11488615778829048, 0.053194259833507396, 
+                       0.3253815377564345, -0.37347524818938466, 
+                       -0.06585913027962967}, {-0.19708730718056253, 
+                       -0.20283888708054437, 0.180662573305157, 
+                       -0.050728877455414684, -0.004888355306921832, 
+                       0.0326282044818364, 0.5119569492557952, 
+                       0.11429869214549832, 0.3428501696198153, 
+                       -0.30021547551726474}, {-0.12360419985730171, 
+                       -0.3862151860053732, -0.10769546916102174, 
+                       0.16953146915873046, 0.033157650191473764, 
+                       -0.12328825736123572, 0.07000284237841328, 
+                       0.33733088077879764, -0.34859004602373167, 
+                       -0.08352892101261213}, {0., 0., 
+                       1.1102230246251565*^-16, -1.1102230246251565*^-16, 
+                       1.3877787807814457*^-17, -3.2959746043559335*^-17, 
+                       -2.7755575615628914*^-17, -2.220446049250313*^-16, 
+                       1.1102230246251565*^-16, 1.214306433183765*^-17}, 
+                       {-0.23317766893811928, -0.08055859551301131, 
+                       0.12995907932581657, 0.1331084877157739, 
+                       -0.06825509368376678, 0.14591264993382685, 
+                       0.5644961637235886, -0.1599613337136225, 
+                       0.19490620687849194, -0.04836557920785831}, 
+                       {-0.2321594760142296, -0.014194523449723051, 
+                       0.012941145761307504, 0.12268618719484352, 
+                       0.036202655832102394, 0.17151110256273613, 
+                       0.27187442186275934, -0.31898159026090755, 
+                       -0.41184418220520674, 0.6581570641946621}, 
+                       {-0.2467344857293443, -0.08182684458198353, 
+                       0.23410597606828065, -0.18569506518019321, 
+                       -0.07460278649877373, 0.4492305840518548, 
+                       -0.20555590191025574, 0.12183013202478016, 
+                       -0.08942274098117839, -0.06582798401666383}, 
+                       {-0.1671116271017999, -0.3635956586324723, 
+                       -0.11613777920390214, 0.1353734573371644, 
+                       0.0977987607358446, -0.168102185329564, 
+                       -0.21846735962771133, -0.23913990901089424, 
+                       0.21459974048625566, -0.0013801422493220049}}, 
+                      "Processor" -> MachineLearning`MLProcessor[
+                        "Standardize", <|"Invertibility" -> "Perfect", 
+                         "Missing" -> "Allowed", "Input" -> <|"f1" -> 
+                          <|"Type" -> "NumericalVector", "Weight" -> 1|>|>, 
+                         "Mean" -> {0.6005034564894642, -1.0289952106540994, 
+                          553.6328238672897, 213.91950569982757, 
+                          81195.38595816356, 2203.790905195023, 
+                          81661.71872864607, 0., 0.5083586185290612, 
+                          0.6414498322094291, 276.8164119336449, 
+                          106.95975284991378, 0.1065130063688495, 
+                          0.5247830768944663, 80.31028921307265, 
+                          41.38058456178675, 16411.52217618273, 
+                          409.1379652358299, 16660.566005308712, 0., 
+                          0.0786635152383648, 0.07354687522592859, 
+                          40.155144606536325, 20.690292280893374}, 
+                         "StandardDeviation" -> {0.17909504674600157, 
+                          1.7394119521941984, 100.10152442847547, 
+                          116.34056005105496, 57862.368820519005, 
+                          732.24915951163, 58370.94814282587, 1., 
+                          0.11356345537365015, 0.11378065021694322, 
+                          50.050762214237736, 58.17028002552748, 
+                          0.08442411233940529, 0.9909154765613413, 
+                          67.58388179713928, 35.26838656130087, 
+                          14253.383647324345, 320.64575578095804, 
+                          14536.692973103574, 1., 0.05403586317436101, 
+                          0.051107116689023444, 33.79194089856964, 
+                          17.634193280650436}, "Output" -> <|"f1" -> 
+                          <|"Type" -> "NumericalVector", "Weight" -> 
+                          1|>|>|>], "FinalDimension" -> 10, "Method" -> 
+                       "Linear"|>, "PerformanceGoal" -> Automatic, 
+                    "Invertibility" -> "Approximate", "Log" -> 
+                     <|"TrainingTime" -> 0.03185454665089541, 
+                      "MaxTrainingMemory" -> 134008, "DataMemory" -> 41080, 
+                      "FunctionMemory" -> 25192, "LanguageVersion" -> 
+                       {11.2, 0}, "Date" -> DateObject[{2018, 12, 12, 13, 20, 
+                         58.6843643`9.521097235400447}, "Instant", 
+                        "Gregorian", -6.], "ProcessorCount" -> 4, 
+                      "ProcessorType" -> "x86-64", "OperatingSystem" -> 
+                       "Windows", "SystemWordLength" -> 64, "Evaluations" -> 
+                       {}|>|>][#1, "ImputedVectors", PerformanceGoal -> 
+                   "Quality"] & ), "Output" -> <|"(f1f2f3f4f5f6f7f8f9f10f11f1\
+2f13f14f15f16f17f18f19f20f21f22f23f24)" -> <|"Type" -> "NumericalVector", 
+                   "Weight" -> 24|>|>, "Type" -> "NumericalVector", 
+               "Version" -> {11.2, 0}, "ID" -> 4373461642116227297|>], 
+             MachineLearning`MLProcessor["Standardize", <|"Invertibility" -> 
+                "Perfect", "Missing" -> "Allowed", "Input" -> 
+                <|"(f1f2f3f4f5f6f7f8f9f10f11f12f13f14f15f16f17f18f19f20f21f22\
+f23f24)" -> <|"Type" -> "NumericalVector", "Weight" -> 24|>|>, "Mean" -> 
+                {0.6005034564894642, -1.0289952106540994, 553.6328238672897, 
+                213.91950569982757, 81195.38595816356, 2203.790905195023, 
+                81661.71872864607, 0., 0.5083586185290612, 
+                0.6414498322094291, 276.8164119336449, 106.95975284991378, 
+                0.1065130063688495, 0.5247830768944663, 80.31028921307265, 
+                41.38058456178675, 16411.52217618273, 409.1379652358299, 
+                16660.566005308712, 0., 0.0786635152383648, 
+                0.07354687522592859, 40.155144606536325, 20.690292280893374}, 
+               "StandardDeviation" -> {0.17909504674600157, 
+                 1.7394119521941984, 100.10152442847547, 116.34056005105496, 
+                 57862.368820519005, 732.24915951163, 58370.94814282587, 1., 
+                 0.11356345537365015, 0.11378065021694322, 
+                 50.050762214237736, 58.17028002552748, 0.08442411233940529, 
+                 0.9909154765613413, 67.58388179713928, 35.26838656130087, 
+                 14253.383647324345, 320.64575578095804, 14536.692973103574, 
+                 1., 0.05403586317436101, 0.051107116689023444, 
+                 33.79194089856964, 17.634193280650436}, "Output" -> 
+                <|"(f1f2f3f4f5f6f7f8f9f10f11f12f13f14f15f16f17f18f19f20f21f22\
+f23f24)" -> <|"Type" -> "NumericalVector", "Weight" -> 24|>|>, "Version" -> 
+                {11.2, 0}, "ID" -> 5179881809679212207|>]}, 
+           "Invertibility" -> "Perfect", "Missing" -> "Imputed"|>]|>, 
+      "Output" -> <|"Preprocessor" -> MachineLearning`MLProcessor[
+          "ToMLDataset", <|"Input" -> <|"f1" -> <|"Type" -> "Nominal"|>|>, 
+           "Output" -> <|"f1" -> <|"Type" -> "Nominal", "Weight" -> 1|>|>, 
+           "Preprocessor" -> MachineLearning`MLProcessor["Sequence", 
+             <|"Processors" -> {MachineLearning`MLProcessor["List"], 
+                MachineLearning`MLProcessor["WrapMLDataset", 
+                 <|"FeatureTypes" -> {"Nominal"}, "FeatureKeys" -> {"f1"}, 
+                  "FeatureWeights" -> Automatic, "ExampleWeights" -> 
+                   Automatic, "RawExample" -> Missing["KeyAbsent", 
+                    "RawExample"]|>]}|>], "ScalarFeature" -> True, 
+           "Invertibility" -> "Perfect", "Missing" -> "Allowed"|>], 
+        "Processor" -> MachineLearning`MLProcessor["Sequence", 
+          <|"Input" -> <|"f1" -> <|"Type" -> "Nominal", "Weight" -> 1|>|>, 
+           "Output" -> <|"f1" -> <|"Type" -> "Nominal", "Weight" -> 1|>|>, 
+           "Processors" -> {MachineLearning`MLProcessor["ToVector", 
+              <|"Invertibility" -> "Perfect", "Missing" -> "Allowed", 
+               "Input" -> <|"f1" -> <|"Type" -> "Nominal", "Weight" -> 1|>|>, 
+               "Output" -> <|"f1" -> <|"Type" -> "NominalVector", "Weight" -> 
+                    1|>|>, "Version" -> {11.2, 0}, "ID" -> 
+                3187737673457038325|>], MachineLearning`MLProcessor[
+              "IntegerEncodeNominalVector", <|"Invertibility" -> "Perfect", 
+               "Missing" -> "Allowed", "Input" -> <|"f1" -> <|"Type" -> 
+                    "NominalVector", "Weight" -> 1|>|>, "Index" -> 
+                {<|1 -> 1, 2 -> 2, 3 -> 3, 4 -> 4, 5 -> 5, 6 -> 6|>}, 
+               "MissingCode" -> 0, "Version" -> {11.2, 0}, "ID" -> 
+                5029920997604602710, "Output" -> <|"f1" -> <|"Type" -> 
+                    "NominalVector", "Weight" -> 1|>|>|>], 
+             MachineLearning`MLProcessor["FromVector", <|"Invertibility" -> 
+                "Perfect", "Missing" -> "Allowed", "Input" -> 
+                <|"f1" -> <|"Type" -> "NominalVector", "Weight" -> 1|>|>, 
+               "Output" -> <|"f1" -> <|"Type" -> "Nominal", "Weight" -> 
+                    1|>|>, "Version" -> {11.2, 0}, "ID" -> 
+                3506048021850469213|>], MachineLearning`MLProcessor[
+              "FirstValues", <|"Info" -> <|"Type" -> "Nominal", "Weight" -> 
+                  1, "SetSize" -> 6|>, "Key" -> "f1", "Invertibility" -> 
+                "Perfect", "Missing" -> "Allowed"|>]}, "Invertibility" -> 
+            "Perfect", "Missing" -> "Allowed"|>], 
+        "ProbabilityPostprocessor" -> Identity, "Name" -> "class", 
+        "Marginal" -> <|1 -> 0.1691542288557214, 2 -> 0.16417910447761194, 
+          3 -> 0.1691542288557214, 4 -> 0.16417910447761194, 
+          5 -> 0.16417910447761194, 6 -> 0.1691542288557214|>|>, 
+      "Prior" -> Automatic, "Utility" -> SparseArray[Automatic, {6, 7}, 0., 
+        {1, {{0, 1, 2, 3, 4, 5, 6}, {{2}, {3}, {4}, {5}, {6}, {7}}}, 
+         {1., 1., 1., 1., 1., 1.}}], "Threshold" -> 0, 
+      "TieBreaker" -> RandomChoice, "PerformanceGoal" -> Automatic, 
+      "BatchProcessing" -> Automatic, "Model" -> 
+       <|"LogProbabilitiesFunction" -> LinearLayer[<|"Type" -> "Linear", 
+           "Arrays" -> <|"Weights" -> RawArray["Real32", {{
+                0.45778611302375793, -0.23742346465587616, 
+               0.42796316742897034, -0.22185875475406647, 
+               0.09194768220186234, -0.14598208665847778, 
+               0.07064303010702133, 0., 0.04680353030562401, 
+               0.3176093101501465, 0.42796316742897034, -0.22185875475406647, 
+               0.04648854210972786, -0.18149536848068237, 
+               0.28397125005722046, 0.03876142576336861, -0.2650066614151001, 
+               -0.2201688140630722, -0.3437802195549011, 0., 
+               0.28472036123275757, -0.027258271351456642, 
+               0.28397125005722046, 0.03876142576336861}, {
+                -0.27542757987976074, 0.031035490334033966, 
+               0.12473707646131516, 0.2201622724533081, 0.31541338562965393, 
+               0.15104515850543976, 0.3382543921470642, 0., 
+               0.01228109560906887, 0.2922936975955963, 0.12473707646131516, 
+               0.2201622724533081, -0.008929417468607426, 
+               0.24372847378253937, 0.14567001163959503, 0.17492462694644928, 
+               0.1884101778268814, -0.013387991115450859, 
+               0.18944363296031952, 0., 0.1256904900074005, 
+               0.05078674107789993, 0.14567001163959503, 
+               0.17492462694644928}, {0.01930949091911316, 
+               -0.18920554220676422, 0.24312788248062134, 0.0616263821721077, 
+               0.1018664762377739, -0.19152794778347015, 0.07519052922725677, 
+               0., 0.7810899615287781, 0.39090073108673096, 
+               0.24312788248062134, 0.0616263821721077, 0.09517400711774826, 
+               0.01829475350677967, 0.027759648859500885, 0.3330548107624054, 
+               -0.10961412638425827, -0.3491749167442322, 
+               -0.19699516892433167, 0., 0.40489503741264343, 
+               0.248320072889328, 0.027759648859500885, 0.3330548107624054}, {
+                0.14314663410186768, -0.519122838973999, 0.3839767575263977, 
+               0.048969630151987076, 0.2399699091911316, 
+               -0.35608071088790894, 0.20945973694324493, 0., 
+               0.9577794671058655, 0.3500792682170868, 0.3839767575263977, 
+               0.048969630151987076, -0.03264499828219414, 
+               -0.20037779211997986, 0.07063522189855576, 
+               0.07471410185098648, 0.15240542590618134, -0.064918152987957, 
+               0.046250924468040466, 0., 0.3281140625476837, 
+               0.20270220935344696, 0.07063522189855576, 
+               0.07471410185098648}, {-0.06933923065662384, 
+               -0.5853362679481506, -0.13144871592521667, 
+               0.08983175456523895, 0.2682330012321472, 0.08481670916080475, 
+               0.23670051991939545, 0., 0.10474810749292374, 
+               -0.17651499807834625, -0.13144871592521667, 
+               0.08983175456523895, 0.23507313430309296, 0.07636595517396927, 
+               0.11076563596725464, 0.178526371717453, -0.03576723858714104, 
+               -0.18757414817810059, -0.13409708440303802, 0., 
+               0.2038676142692566, -0.20166325569152832, 0.11076563596725464, 
+               0.178526371717453}}], "Biases" -> RawArray["Real32", {
+                -0.3857329487800598, -0.3195812702178955, 
+               0.04582393541932106, -0.1649743616580963, 
+               -0.12498795241117477}]|>, "Parameters" -> 
+            <|"OutputDimensions" -> {5}, "$OutputSize" -> 5, 
+             "$InputSize" -> 24, "$InputDimensions" -> {24}|>, 
+           "Inputs" -> <|"Input" -> NeuralNetworks`TensorT[{24}, 
+               NeuralNetworks`RealT]|>, "Outputs" -> 
+            <|"Output" -> NeuralNetworks`TensorT[{5}, 
+               NeuralNetworks`RealT]|>|>, <|"Version" -> "11.2.0"|>], 
+        "Processor" -> MachineLearning`MLProcessor["FirstValues", 
+          <|"Info" -> <|"Weight" -> 24, "Type" -> "NumericalVector"|>, 
+           "Key" -> "(f1f2f3f4f5f6f7f8f9f10f11f12f13f14f15f16f17f18f19f20f21f\
+22f23f24)", "Invertibility" -> "Perfect", "Missing" -> "Allowed"|>], 
+        "Method" -> "LogisticRegression", "Options" -> 
+         <|"L1Regularization" -> <|"Value" -> 0, "Options" -> <||>|>, 
+          "L2Regularization" -> <|"Value" -> 10., "Options" -> <||>|>, 
+          "OptimizationMethod" -> <|"Value" -> "LBFGS", "Options" -> <||>|>, 
+          MaxIterations -> <|"Value" -> 30, "Options" -> <||>|>|>|>, 
+      "TrainingInformation" -> <|"LossName" -> "MeanCrossEntropy", 
+        "BestModelInformation" -> Dataset[<|"MeanCrossEntropy" -> 
+            1.3856222305479438 \[PlusMinus] 0.11353985172133331, 
+           "Accuracy" -> 0.43589743589743585 \[PlusMinus] 
+             0.08044135838502696, "EvaluationTime" -> 0.0001535843013118369, 
+           "TestSize" -> 39, "TrainingSize" -> 156, "TrainingTime" -> 
+            0.045049352005926045, "TrainingMemory" -> 200376, 
+           "ModelMemory" -> 11328, "ExperimentCount" -> 1, 
+           "Utility" -> 0.2743515037513708, "Configuration" -> 
+            {"LogisticRegression", "L1Regularization" -> 0, 
+             "L2Regularization" -> 10., "OptimizationMethod" -> Automatic, 
+             MaxIterations -> 30}, "FinalTrainingSize" -> 195|>, 
+          TypeSystem`Struct[{"MeanCrossEntropy", "Accuracy", 
+            "EvaluationTime", "TestSize", "TrainingSize", "TrainingTime", 
+            "TrainingMemory", "ModelMemory", "ExperimentCount", "Utility", 
+            "Configuration", "FinalTrainingSize"}, {TypeSystem`AnyType, 
+            TypeSystem`AnyType, TypeSystem`Atom[Real], TypeSystem`Atom[
+             Integer], TypeSystem`Atom[Integer], TypeSystem`Atom[Real], 
+            TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], 
+            TypeSystem`Atom[Integer], TypeSystem`Atom[Real], 
+            TypeSystem`Tuple[{TypeSystem`Atom[String], TypeSystem`AnyType, 
+              TypeSystem`AnyType, TypeSystem`AnyType, TypeSystem`AnyType}], 
+            TypeSystem`Atom[Integer]}], <|"ID" -> 80397648900285|>], 
+        "Configurations" -> Dataset[<|<|"Value" -> "LogisticRegression", 
+             "Options" -> <|"L1Regularization" -> <|"Value" -> 0|>, 
+               "L2Regularization" -> <|"Value" -> 0.001|>, 
+               "OptimizationMethod" -> <|"Value" -> Automatic|>, 
+               MaxIterations -> <|"Value" -> 30|>|>|> -> 
+            <|"Experiments" -> {<|"MeanCrossEntropy" -> 
+                 5.732569919543032 \[PlusMinus] 0.4087603907099903, 
+                "Accuracy" -> 0.2634043362780663 \[PlusMinus] 
+                  0.032471454589236386, "EvaluationTime" -> 
+                 0.00006757357199091858, "TestSize" -> 186, "TrainingSize" -> 
+                 9, "TrainingTime" -> 0.05703663835756853, 
+                "TrainingMemory" -> 130368, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.066847464485255|>}, 
+             "PredictedPerformances" -> <|"EvaluationTime" -> 
+                0.00006757357199091858, "MeanCrossEntropy" -> 
+                5.732569919543032 \[PlusMinus] 0.4087603907099903, 
+               "ModelMemory" -> 11328, "TrainingMemory" -> 130368, 
+               "TrainingTime" -> 0.11122144479725864|>, "Index" -> 1|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 100000.|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.7910220625565307 \[PlusMinus] 
+                  0.00017278290774816593, "Accuracy" -> 
+                 0.4615384615384615 \[PlusMinus] 0.08087038200582268, 
+                "EvaluationTime" -> 0.000222718326404575, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 
+                 0.020623437589156694, "TrainingMemory" -> 157696, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.22614803395136163|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.000222718326404575, 
+               "MeanCrossEntropy" -> 1.7910220625565307 \[PlusMinus] 
+                 0.00017278290774816593, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 157696, "TrainingTime" -> 
+                0.025779296986445863|>, "Index" -> 2|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 1000.|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.7298153935335052 \[PlusMinus] 
+                  0.014441447894684106, "Accuracy" -> 
+                 0.4615384615384615 \[PlusMinus] 0.08087038200582268, 
+                "EvaluationTime" -> 0.00015346567286077215, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 
+                 0.022587133882448616, "TrainingMemory" -> 177760, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.23261440287549187|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.00015346567286077215, 
+               "MeanCrossEntropy" -> 1.7298153935335052 \[PlusMinus] 
+                 0.014441447894684106, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 177760, "TrainingTime" -> 
+                0.028233917353060772|>, "Index" -> 3|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 1.|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 2.154935814690109 \[PlusMinus] 
+                  0.10305852574194181, "Accuracy" -> 
+                 0.23073663992769175 \[PlusMinus] 0.031046322463625615, 
+                "EvaluationTime" -> 0.000045347532483721556, "TestSize" -> 
+                 186, "TrainingSize" -> 9, "TrainingTime" -> 
+                 0.04359354365445937, "TrainingMemory" -> 130168, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.18104522815265128|>, <|"MeanCrossEntropy" -> 
+                 1.8039387525249178 \[PlusMinus] 0.14814704367241396, 
+                "Accuracy" -> 0.31 \[PlusMinus] 0.046482319871173246, 
+                "EvaluationTime" -> 0.00014978067774253063, "TestSize" -> 
+                 100, "TrainingSize" -> 40, "TrainingTime" -> 
+                 0.058114101035772685, "TrainingMemory" -> 143744, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.21070304117631025|>, <|"MeanCrossEntropy" -> 
+                 1.4776882601686712 \[PlusMinus] 0.1736065928329995, 
+                "Accuracy" -> 0.43589743589743585 \[PlusMinus] 
+                  0.08044135838502696, "EvaluationTime" -> 
+                 0.00021212085144279018, "TestSize" -> 39, "TrainingSize" -> 
+                 156, "TrainingTime" -> 0.04689687150280855, 
+                "TrainingMemory" -> 200184, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.25057157839518185|>}, 
+             "PredictedPerformances" -> <|"EvaluationTime" -> 
+                0.00021212085144279018, "MeanCrossEntropy" -> 
+                1.4776882601686712 \[PlusMinus] 0.1736065928329995, 
+               "ModelMemory" -> 11328, "TrainingMemory" -> 200184, 
+               "TrainingTime" -> 0.05862108937851069|>, "Index" -> 4|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 0.0001|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.69322425301503 \[PlusMinus] 
+                  0.26685564715743054, "Accuracy" -> 
+                 0.358974358974359 \[PlusMinus] 0.0778175613675493, 
+                "EvaluationTime" -> 0.00023692737865433128, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 0.09335165431131577, 
+                "TrainingMemory" -> 200248, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.21244323112309574|>}, 
+             "PredictedPerformances" -> <|"EvaluationTime" -> 
+                0.00023692737865433128, "MeanCrossEntropy" -> 
+                1.69322425301503 \[PlusMinus] 0.26685564715743054, 
+               "ModelMemory" -> 11328, "TrainingMemory" -> 200248, 
+               "TrainingTime" -> 0.11668956788914471|>, "Index" -> 5|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 0.1|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.5993593964235375 \[PlusMinus] 
+                  0.23164879633655105, "Accuracy" -> 
+                 0.38461538461538464 \[PlusMinus] 0.0789214116988581, 
+                "EvaluationTime" -> 0.00015593050845511764, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 
+                 0.045989561566248276, "TrainingMemory" -> 200136, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.22696940651845923|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.00015593050845511764, 
+               "MeanCrossEntropy" -> 1.5993593964235375 \[PlusMinus] 
+                 0.23164879633655105, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 200136, "TrainingTime" -> 
+                0.05748695195781034|>, "Index" -> 6|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 100.|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.7713667814905976 \[PlusMinus] 
+                  0.00439673392784968, "Accuracy" -> 
+                 0.22119277520406655 \[PlusMinus] 0.030469504897595766, 
+                "EvaluationTime" -> 0.00004380536261987974, "TestSize" -> 
+                 186, "TrainingSize" -> 9, "TrainingTime" -> 
+                 0.018362616568764582, "TrainingMemory" -> 101912, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.22822190735207304|>, <|"MeanCrossEntropy" -> 
+                 1.6812846835390576 \[PlusMinus] 0.01493486154298587, 
+                "Accuracy" -> 0.3287387085981934 \[PlusMinus] 
+                  0.03795838024118238, "EvaluationTime" -> 
+                 0.000053919564830839466, "TestSize" -> 155, 
+                "TrainingSize" -> 40, "TrainingTime" -> 0.028251523792339632, 
+                "TrainingMemory" -> 138248, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.2392272938229481|>, <|
+                "MeanCrossEntropy" -> 1.5245906293315672 \[PlusMinus] 
+                  0.060187416280936885, "Accuracy" -> 
+                 0.4871794871794871 \[PlusMinus] 0.0810840425684201, 
+                "EvaluationTime" -> 0.0001490500582933618, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 0.14150745047964053, 
+                "TrainingMemory" -> 245112, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.2575551348763549|>}, 
+             "PredictedPerformances" -> <|"EvaluationTime" -> 
+                0.0001490500582933618, "MeanCrossEntropy" -> 
+                1.5245906293315672 \[PlusMinus] 0.060187416280936885, 
+               "ModelMemory" -> 11328, "TrainingMemory" -> 245112, 
+               "TrainingTime" -> 0.17688431309955063|>, "Index" -> 7|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 0.01|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 7.070796818467885 \[PlusMinus] 
+                  0.7067573201636078, "Accuracy" -> 
+                 0.3394402813885915 \[PlusMinus] 0.038129267711650934, 
+                "EvaluationTime" -> 0.00005027142106691258, "TestSize" -> 
+                 155, "TrainingSize" -> 40, "TrainingTime" -> 
+                 0.04138052989984635, "TrainingMemory" -> 143848, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.05304566483320682|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.00005027142106691258, 
+               "MeanCrossEntropy" -> 7.070796818467885 \[PlusMinus] 
+                 0.7067573201636078, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 143848, "TrainingTime" -> 
+                0.08069203330470039|>, "Index" -> 8|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 10.|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.3856222305479438 \[PlusMinus] 
+                  0.11353985172133331, "Accuracy" -> 
+                 0.43589743589743585 \[PlusMinus] 0.08044135838502696, 
+                "EvaluationTime" -> 0.0001535843013118369, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 
+                 0.045049352005926045, "TrainingMemory" -> 200376, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.2743515037513708|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.0001535843013118369, 
+               "MeanCrossEntropy" -> 1.3856222305479438 \[PlusMinus] 
+                 0.11353985172133331, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 200376, "TrainingTime" -> 
+                0.05631169000740755|>, "Index" -> 9|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 1.*^-6|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 10.19768093697884 \[PlusMinus] 
+                  0.7501904095024157, "Accuracy" -> 
+                 0.2634043362780663 \[PlusMinus] 0.032471454589236386, 
+                "EvaluationTime" -> 0.0000435096418753796, "TestSize" -> 186, 
+                "TrainingSize" -> 9, "TrainingTime" -> 0.040267597314773834, 
+                "TrainingMemory" -> 130128, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.03751377155849308|>}, 
+             "PredictedPerformances" -> <|"EvaluationTime" -> 
+                0.0000435096418753796, "MeanCrossEntropy" -> 
+                10.19768093697884 \[PlusMinus] 0.7501904095024157, 
+               "ModelMemory" -> 11328, "TrainingMemory" -> 130128, 
+               "TrainingTime" -> 0.07852181476380897|>, "Index" -> 10|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 1.*^6|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.7917571005570574 \[PlusMinus] 
+                  4.6654257643898803*^-7, "Accuracy" -> 
+                 0.21434518860586968 \[PlusMinus] 0.03008843067399994, 
+                "EvaluationTime" -> 0.00006486786536600614, "TestSize" -> 
+                 186, "TrainingSize" -> 9, "TrainingTime" -> 
+                 0.016060156962048742, "TrainingMemory" -> 82080, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.22607269548907818|>, <|"MeanCrossEntropy" -> 
+                 1.7917434824657692 \[PlusMinus] 2.0784606952338585*^-6, 
+                "Accuracy" -> 0.3278048780487805 \[PlusMinus] 
+                  0.03787923133517215, "EvaluationTime" -> 
+                 0.00005095130240473532, "TestSize" -> 155, "TrainingSize" -> 
+                 40, "TrainingTime" -> 0.011621792093911976, 
+                "TrainingMemory" -> 95872, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.22607425418575988|>, <|
+                "MeanCrossEntropy" -> 1.7916855996262278 \[PlusMinus] 
+                  0.000017308837640374446, "Accuracy" -> 
+                 0.4615384615384615 \[PlusMinus] 0.08087038200582268, 
+                "EvaluationTime" -> 0.00014680929866213864, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 
+                 0.011673197756040038, "TrainingMemory" -> 152072, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.22607999869495166|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.00014680929866213864, 
+               "MeanCrossEntropy" -> 1.7916855996262278 \[PlusMinus] 
+                 0.000017308837640374446, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 152072, "TrainingTime" -> 
+                0.014591497195050046|>, "Index" -> 11|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 0.00001|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 26.722608499453095 \[PlusMinus] 
+                  3.2879069458013443, "Accuracy" -> 0.34 \[PlusMinus] 
+                  0.047609522856952406, "EvaluationTime" -> 
+                 0.0002184432206469814, "TestSize" -> 100, "TrainingSize" -> 
+                 40, "TrainingTime" -> 0.10581701332074923, 
+                "TrainingMemory" -> 144000, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.01379989403376829|>}, 
+             "PredictedPerformances" -> <|"EvaluationTime" -> 
+                0.0002184432206469814, "MeanCrossEntropy" -> 
+                26.722608499453095 \[PlusMinus] 3.2879069458013443, 
+               "ModelMemory" -> 11328, "TrainingMemory" -> 144000, 
+               "TrainingTime" -> 0.206343175975461|>, "Index" -> 12|>, 
+           <|"Value" -> "LogisticRegression", "Options" -> 
+              <|"L1Regularization" -> <|"Value" -> 0|>, "L2Regularization" -> 
+                <|"Value" -> 10000.|>, "OptimizationMethod" -> 
+                <|"Value" -> Automatic|>, MaxIterations -> 
+                <|"Value" -> 30|>|>|> -> <|"Experiments" -> 
+              {<|"MeanCrossEntropy" -> 1.7915229522336906 \[PlusMinus] 
+                  0.00004662631012085926, "Accuracy" -> 
+                 0.21434518860586968 \[PlusMinus] 0.03008843067399994, 
+                "EvaluationTime" -> 0.00004449353519352958, "TestSize" -> 
+                 186, "TrainingSize" -> 9, "TrainingTime" -> 
+                 0.012301374947244939, "TrainingMemory" -> 84680, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.2260975868791648|>, <|"MeanCrossEntropy" -> 
+                 1.790167683180095 \[PlusMinus] 0.00020704972315240992, 
+                "Accuracy" -> 0.3278048780487805 \[PlusMinus] 
+                  0.03787923133517215, "EvaluationTime" -> 
+                 0.000060492856594569564, "TestSize" -> 155, 
+                "TrainingSize" -> 40, "TrainingTime" -> 0.014097488781999382, 
+                "TrainingMemory" -> 101360, "ModelMemory" -> 11328, 
+                "ExperimentCount" -> 1, "Utility" -> 0.22625252981687152|>, <|
+                "MeanCrossEntropy" -> 1.7845118469808814 \[PlusMinus] 
+                  0.0016978088917410882, "Accuracy" -> 
+                 0.4615384615384615 \[PlusMinus] 0.08087038200582268, 
+                "EvaluationTime" -> 0.00014803512598980778, "TestSize" -> 39, 
+                "TrainingSize" -> 156, "TrainingTime" -> 
+                 0.015901313466073035, "TrainingMemory" -> 163704, 
+                "ModelMemory" -> 11328, "ExperimentCount" -> 1, "Utility" -> 
+                 0.22681795804400112|>}, "PredictedPerformances" -> 
+              <|"EvaluationTime" -> 0.00014803512598980778, 
+               "MeanCrossEntropy" -> 1.7845118469808814 \[PlusMinus] 
+                 0.0016978088917410882, "ModelMemory" -> 11328, 
+               "TrainingMemory" -> 163704, "TrainingTime" -> 
+                0.01987664183259129|>, "Index" -> 13|>|>, 
+          TypeSystem`Assoc[TypeSystem`Struct[{"Value", "Options"}, 
+            {TypeSystem`Atom[TypeSystem`Enumeration["LogisticRegression"]], 
+             TypeSystem`Assoc[TypeSystem`AnyType, TypeSystem`Struct[{
+                "Value"}, {TypeSystem`AnyType}], 4]}], TypeSystem`Struct[
+            {"Experiments", "PredictedPerformances", "Index"}, 
+            {TypeSystem`Vector[TypeSystem`Struct[{"MeanCrossEntropy", 
+                "Accuracy", "EvaluationTime", "TestSize", "TrainingSize", 
+                "TrainingTime", "TrainingMemory", "ModelMemory", 
+                "ExperimentCount", "Utility"}, {TypeSystem`AnyType, 
+                TypeSystem`AnyType, TypeSystem`Atom[Real], TypeSystem`Atom[
+                 Integer], TypeSystem`Atom[Integer], TypeSystem`Atom[Real], 
+                TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], 
+                TypeSystem`Atom[Integer], TypeSystem`Atom[Real]}], 
+              TypeSystem`AnyLength], TypeSystem`Struct[{"EvaluationTime", 
+               "MeanCrossEntropy", "ModelMemory", "TrainingMemory", 
+               "TrainingTime"}, {TypeSystem`Atom[Real], TypeSystem`AnyType, 
+               TypeSystem`Atom[Integer], TypeSystem`Atom[Integer], 
+               TypeSystem`Atom[Real]}], TypeSystem`Atom[Integer]}], 13], 
+          <|"ID" -> 80393353932989|>], "MaxTrainingSize" -> 195, 
+        "LastReportingTime" -> 3.7536096603596676`17.327024097305188*^9, 
+        "RoundPartitioning" -> Dataset[{<|"TrainingSizes" -> 9, 
+            "TimeBudgets" -> 0.384, "ElapsedTimes" -> 0.47477020000000003, 
+            "ExperimentCounts" -> 6|>, <|"TrainingSizes" -> 40, 
+            "TimeBudgets" -> 0.48000000000000004, "ElapsedTimes" -> 
+             0.4816324, "ExperimentCounts" -> 6|>, <|"TrainingSizes" -> 156, 
+            "TimeBudgets" -> 0.6, "ElapsedTimes" -> 0.5774566999999999, 
+            "ExperimentCounts" -> 9|>}, TypeSystem`Vector[TypeSystem`Struct[
+            {"TrainingSizes", "TimeBudgets", "ElapsedTimes", 
+             "ExperimentCounts"}, {TypeSystem`Atom[Integer], 
+             TypeSystem`Atom[Real], TypeSystem`Atom[Real], TypeSystem`Atom[
+              Integer]}], 3], <|"Origin" -> HoldComplete[
+             AssociationTranspose, Dataset`DatasetHandle[80401943867581]], 
+           "ID" -> 80406238834877|>]|>, 
+      "Log" -> <|"TrainingTime" -> 2.383181917955535, "MaxTrainingMemory" -> 
+         752928, "DataMemory" -> 83928, "FunctionMemory" -> 294152, 
+        "LanguageVersion" -> {11.2, 0}, "Date" -> DateObject[
+          {2018, 12, 12, 13, 21, 0.9420773`7.726661528456141}, "Instant", 
+          "Gregorian", -6.], "ProcessorCount" -> 4, "ProcessorType" -> 
+         "x86-64", "OperatingSystem" -> "Windows", "SystemWordLength" -> 64, 
+        "Evaluations" -> {}|>|>]
